@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: frontend_app
+title: Vue Admin 前端应用（vue-admin-template）
+scope:
+    - src/
+source_files: []
+depends_on: []
+related_to:
+    - path: mock_server

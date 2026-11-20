@@ -1,0 +1,79 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: Q0DeR-MaG1C-BrAnCh-Fo2-NoN-GiT-Or-No-C0MmIt
+nodes_managed: true
+exported_at: "2026-11-19T09:53:27Z"
+modules:
+    "":
+        dir_name: vue-admin-template 前端工程根
+        title: vue-admin-template 前端工程根
+        scope:
+            - README.md
+            - README-zh.md
+            - .gitignore
+            - .editorconfig
+            - .eslintrc.js
+            - .eslintignore
+            - .travis.yml
+            - babel.config.js
+            - jest.config.js
+            - jsconfig.json
+            - package.json
+            - postcss.config.js
+            - vue.config.js
+            - dev.cmd
+            - .env.development
+            - .env.production
+            - .env.staging
+            - LICENSE
+        source_files: []
+        children:
+            - frontend_app
+            - mock_server
+            - unit_tests
+        depends_on: []
+        related_to: []
+    frontend_app:
+        dir_name: Vue Admin 前端应用（vue-admin-template）
+        title: Vue Admin 前端应用（vue-admin-template）
+        scope:
+            - src/
+        source_files: []
+        children:
+            - frontend_app/entry_and_bootstrap
+        depends_on: []
+        related_to:
+            - path: mock_server
+    frontend_app/entry_and_bootstrap:
+        dir_name: 应用入口与路由权限引导
+        title: 应用入口与路由权限引导
+        scope:
+            - src/main.js
+            - src/App.vue
+            - src/permission.js
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: unit_tests
+    mock_server:
+        dir_name: Mock.js 前端模拟服务器
+        title: Mock.js 前端模拟服务器
+        scope:
+            - mock/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: frontend_app
+    unit_tests:
+        dir_name: Vue 前端单元测试套件
+        title: Vue 前端单元测试套件
+        scope:
+            - tests/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: frontend_app/entry_and_bootstrap

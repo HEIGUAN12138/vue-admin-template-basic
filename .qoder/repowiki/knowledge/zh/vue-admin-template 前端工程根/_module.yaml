@@ -1,0 +1,25 @@
+schema_version: 1
+module_path: ""
+title: vue-admin-template 前端工程根
+scope:
+    - README.md
+    - README-zh.md
+    - .gitignore
+    - .editorconfig
+    - .eslintrc.js
+    - .eslintignore
+    - .travis.yml
+    - babel.config.js
+    - jest.config.js
+    - jsconfig.json
+    - package.json
+    - postcss.config.js
+    - vue.config.js
+    - dev.cmd
+    - .env.development
+    - .env.production
+    - .env.staging
+    - LICENSE
+source_files: []
+depends_on: []
+related_to: []

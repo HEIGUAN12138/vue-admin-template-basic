@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: frontend_app/entry_and_bootstrap
+title: 应用入口与路由权限引导
+scope:
+    - src/main.js
+    - src/App.vue
+    - src/permission.js
+source_files: []
+depends_on: []
+related_to:
+    - path: unit_tests
